@@ -1,0 +1,75 @@
+
+<!-- <app-carousel-indicators [items] = "carouselData">
+
+</app-carousel-indicators> -->
+
+<div class="container">
+    <div class="content0" >
+        <p class="p-title">{{currentProduct.title}}</p> 
+    </div>
+    <div class="content1" >
+        <!-- <app-view-imagen [imageUrl] ="currentProduct.imageUrl" ></app-view-imagen> -->
+        <app-carousel-indicators [items] = "carouselData">
+
+        </app-carousel-indicators>
+    </div>
+    <div class="content2" >
+        <div class="data1">
+            <p class="p-title">Precio: &nbsp;</p> 
+            <p class="p-value"> ${{currentProduct.precioMenudeo}} c/u</p>
+        </div>
+        <div class="data2">
+            <p class="p-title">Contenido: &nbsp;</p> 
+            <p class="p-value"> {{currentProduct.contenidoMenudeo}} {{currentProduct.unidadMedida}}</p>
+        </div>
+        <div class="data3" *ngIf="currentProduct.sabor !='' " >
+            <p class="p-title">Sabor: &nbsp;</p> 
+            <p class="p-value"> {{currentProduct.sabor}} &nbsp;</p>
+        </div>
+        <div class="data4" *ngIf="currentProduct.precioMayoreo !='' ">
+            <p class="p-title">Precio Mayoreo: &nbsp;</p> 
+            <p class="p-value"> ${{currentProduct.precioMayoreo}} &nbsp;</p>
+        </div>
+        <div class="data5"  *ngIf="currentProduct.precioMayoreFrio !='' ">
+            <p class="p-title">Precio Mayoreo (Frio): &nbsp;</p> 
+            <p class="p-value"> ${{currentProduct.precioMayoreFrio}} </p> 
+        </div>
+        <div class="data6"  *ngIf="currentProduct.precioMayoreAltiempo !='' ">
+            <p class="p-title">Precio Mayoreo (Al tiempo): &nbsp;</p> 
+            <p class="p-value"> ${{currentProduct.precioMayoreAltiempo}} </p> 
+        </div>
+        <div class="data7"  >
+            <p class="p-title">Detalles en mayoreo: &nbsp;</p> 
+            <p class="p-value"> {{currentProduct.detallesMayoreo}} </p> 
+        </div>
+
+    </div>
+    <div class="content3" >
+
+        <div style="width: 25px;height: 25px;">
+            <svg  xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 448 512">
+                <path style="fill: #fcbe05;" d="M246.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 109.3V320c0 17.7 14.3 32 32 32s32-14.3 32-32V109.3l73.4 73.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-128-128zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 53 43 96 96 96H352c53 0 96-43 96-96V352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V352z"/>
+            </svg>
+        </div>
+   
+    </div>
+    <div class="content4" >
+        mas productos
+        <div *ngFor="let number of [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]">adap11111</div>
+    </div>
+    <!-- <footer class="content5">
+        <app-button1  [name] ="'Agregar al carrito'" ></app-button1>
+    </footer> -->
+
+    <div class="content5" >
+        
+        <!-- <div style="background: red;">
+            <h1>alfredo</h1>
+        </div> -->
+
+        <button class="btn btn-warning btn-width" type="button" style="width: 100%;" >Agregar al carrito</button>
+
+        <!-- <app-button1  [name] ="'Agkregar al carrito'" ></app-button1> -->
+    </div>
+</div>

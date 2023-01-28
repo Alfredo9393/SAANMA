@@ -1,0 +1,92 @@
+
+// .container{
+//   background: #330ddf;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+//   display: grid;
+//   // grid-gap: 18px; 
+//   // width: 100%;
+//   // grid-template-columns: repeat(auto-fit, minmax(min(100%, 70px)   ,1fr ) ) ;
+
+// }
+
+
+// @media only screen and (max-width: 350px) {
+//   .search__input{
+//     background: #bcd142;
+//     width: 300px;
+//   }
+// }
+
+// @media only screen and (max-width: 800px) {
+//   .search__input{
+//     background: #23ca4d;
+//     width: 700px;
+//   }
+// }
+
+// @media only screen and (max-width: 900px) {
+//   .search__input{
+//     background: #8beb7f;
+//     width: 800px;
+//   }
+// }
+
+// @media only screen and (max-width: 1000px) {
+//   .search__input{
+//     background: #ee79aa;
+//     width: 900px;
+//   }
+// }
+
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  svg { //Posicion del icono busqueda y vaciar caja te texto
+    padding: 9px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  &__icon { //icono de busqueda
+    fill: #ea802a;
+    z-index: 99;
+  }
+
+ 
+  &__delete { //icono de vaciar caja de texto
+    fill: #F39C12;
+    right: .1rem; //distancia hacia el otro icono
+    display: none;
+    height: 40px;
+  }
+
+  input {
+    // width: 22rem; //34rem; //tamaño de la caja de texto 22rem
+    width: 100%;
+    height: 8px;
+    box-shadow: 0 0 3px 1px #e1e5ee;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 1.5rem 2.1rem 1.5rem 2rem; //padding: <> <pading del texto al icono borrar> <> <pading del texto al icono buscar> 
+    margin: 5px;
+    font-family: inherit;
+    font-size: 16pt; //2rem;
+    outline: none;
+  
+
+    &:not(:placeholder-shown) ~ .search__delete {
+      display: block;
+    }
+    
+  }
+
+}
+
+// *, ::after, ::before {
+//   box-sizing: border-box;
+// }

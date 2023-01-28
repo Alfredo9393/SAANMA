@@ -1,0 +1,18 @@
+
+
+
+<div class="gallery">
+
+    <div class="card"  *ngFor="let rw of cardData" >
+        <div class="card-image"> 
+            <img src="{{( rw.imageUrl) || defaultImage }}" alt="">
+        </div>
+        <div class="card-description">
+            <h6 >{{rw.title}} - {{rw.contenidoMenudeo}} {{rw.unidadMedida}}</h6>
+        </div>
+        <div class="card-price">
+            <p >${{rw.precioMenudeo}} </p>    
+        </div>
+        <a href="" [routerLink]="['/module/component/listProductDetails', rw.id ]" > Ver detallles</a>
+    </div>
+</div>

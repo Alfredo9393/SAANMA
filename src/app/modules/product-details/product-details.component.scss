@@ -1,0 +1,143 @@
+.container {
+  display: grid;
+
+  height: 100vh;
+
+  grid-template-columns: 1fr 1fr 0.2fr;
+  // grid-template-rows: 0.1fr 0.9fr 1fr 0.1fr;
+  grid-template-rows: 35px auto auto 50px;
+
+  grid-template-areas:
+    "content1 content0 content0"
+    "content1 content2 content3"
+    "content4 content4 content4"
+    "content5 content5 content5";
+  grid-gap: 0.2rem;
+  padding: 1rem;
+
+ background: #b0e96f;
+  // font-weight: 800;
+  // text-transform: uppercase;
+  // font-size: 12px;
+  // color: #004d40;
+  // text-align: center;
+
+  //esta es la colusion para que el stiky funcione agregando un scroll
+  // overflow: scroll;
+}
+
+
+
+.content0 {
+  background: #fcbe05;
+  grid-area: content0;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+
+  // position: fixed;
+  // width: 100%;
+  // max-width: inherit;
+
+
+  //solucion 1 opcion 1
+  position: sticky;
+  top: 0;
+}
+
+.content1 {
+  background: #71f8d9;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+
+
+
+.content2 {
+  background: #64ffda;
+  grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+.content3 {
+  background: #73ffba;
+  grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.content4 {
+  background: #64faaf;
+  grid-area: content4;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+
+}
+
+.content5 {
+  background: #1de9b6;
+  grid-area: content5;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  position: sticky;
+  bottom: 0;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+
+
+}
+
+
+
+// a {
+//   text-align: center;
+//   display: block;
+//   font-family: inherit;
+//   text-decoration: none;
+//   font-weight: bold;
+//   margin: 1rem;
+// }
+
+@media only screen and (max-width: 550px) { /*1010*/
+  .container {
+    grid-template-columns: 1fr 0.2fr;
+    // grid-template-rows:  0.9fr 0.1fr 0.9fr 1fr 0.1fr;
+    grid-template-rows:  0.9fr 0.1fr auto 1fr 0.1fr;
+
+    grid-template-areas:
+      "content1 content1"
+      "content0 content0"
+      "content2 content3"
+      "content4 content4"
+      "content5 content5";
+  }
+
+
+
+}
+
+
+.p-title{
+  margin: 3px;
+  font-size: 16px; 
+  font-weight:600;
+  display: inline-block;
+}
+
+.p-value{
+  margin: 0;
+  display: inline-block;
+}
+
