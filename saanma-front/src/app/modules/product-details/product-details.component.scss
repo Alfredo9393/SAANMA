@@ -3,6 +3,10 @@
 
   height: 100vh;
 
+  // height: calc(100vh -  105px);
+  // margin-top: 60px;
+  // margin-bottom: 45px;
+  
   grid-template-columns: 1fr 1fr 0.2fr;
   // grid-template-rows: 0.1fr 0.9fr 1fr 0.1fr;
   grid-template-rows: 35px auto auto 50px;
@@ -13,9 +17,9 @@
     "content4 content4 content4"
     "content5 content5 content5";
   grid-gap: 0.2rem;
-  padding: 1rem;
+  // padding: 4rem;
 
- background: #b0e96f;
+ background: #e96fc0;
   // font-weight: 800;
   // text-transform: uppercase;
   // font-size: 12px;
@@ -28,7 +32,7 @@
 
 
 
-.content0 {
+.content0 { // este es el titulo del producto 
   background: #fcbe05;
   grid-area: content0;
   border-radius: var(--main-radius);
@@ -45,7 +49,7 @@
 
   //solucion 1 opcion 1
   position: sticky;
-  top: 0;
+  top: 60px; //se pone un margin top para que no se ensime con el footer de busqueda 
 }
 
 .content1 {

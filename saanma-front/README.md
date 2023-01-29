@@ -33,3 +33,6 @@ Este proyecto es el mas reciente y actualizado - 21-enero-2023
 ## Funcionalidades 
 
 
+## manueales
+    -Tamaño letras html 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight

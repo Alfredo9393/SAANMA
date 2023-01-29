@@ -1,10 +1,11 @@
 
 .gallery {
-    margin-top: 60px;
+    // margin-top: 60px;
     margin-bottom: 45px;
     display: grid;
     grid-gap: 18px; 
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px)   ,1fr ) ) ;
+    padding: 1rem;
 }
 
 .card {
@@ -45,6 +46,7 @@
     padding-left: 7px;
     font-size: 15px;
     color: red;
+    font-weight: 900;
 }
 
 .card a {
