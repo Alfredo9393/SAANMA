@@ -4,6 +4,8 @@ import { dummy_data } from './data.const';
 
 import { IProductPreview } from '../../interfase/IProductPreview.metadata';
 import dataProduct from '../../../assets/data/products-saanma.json'
+import data from '../../../assets/data/products-saanma.json'
+
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -13,6 +15,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductDetailsComponent implements OnInit {
   public carouselData:ICarouselIem[] = dummy_data;
+  public cardData:IProductPreview[] = data;
 
   currentProduct:IProductPreview = {
     id: "",

@@ -12,4 +12,9 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showform() {
+    console.log("hello show form")
+  }
+  
+
 }
