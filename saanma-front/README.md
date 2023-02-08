@@ -26,13 +26,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 2.- instalar boostrap
     npm install bootstrap
 
+3-  Se agrego angular material @angular/material@7.0.0
+    npm install @angular/material@14.2.7
+    Nota1: para que funcione los estilos del <table> hay que agregar unos de los temas en el angular.json:
+        "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
+    Nota2: para ocupar <mat-icon></mat-icon> se debe importar en el index.html:
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 ## Notas - ADAP
 Este proyecto es el mas reciente y actualizado - 21-enero-2023
 
 ## Funcionalidades 
 
-
 ## manueales
     -Tamaño letras html 
     https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+    - animaciones flexbox
+    https://codepen.io/osublake/pen/dMLQJr
+    - pagina donde viene ejemplos de flexbox css
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/

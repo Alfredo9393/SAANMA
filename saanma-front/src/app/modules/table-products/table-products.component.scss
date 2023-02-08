@@ -1,0 +1,41 @@
+
+
+  .container-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding:1em;
+  }
+
+  .item1{
+    background: rgb(238, 206, 146);
+    align-items: center;
+  }
+  .item2{
+    background: rgb(233, 245, 169);
+  }
+
+  table {
+    width: 100%;
+  }
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+
+
+  .example-form-field {
+    width: 200px;
+    height:50px ;
+    background: rgb(209, 146, 146);
+  }
+
+  .icon-display {
+    transform: scale(2);
+ }

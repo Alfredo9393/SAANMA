@@ -6,7 +6,7 @@
 export const environment = {
   env:"development",
   production: false,
-  url:"https://6edeayi7ch.execute-api.us-east-1.amazonaws.com/v1/examen"
+  url:"https://63433000ba4478d4784987cd.mockapi.io/api/v1/"
 };
 
 
