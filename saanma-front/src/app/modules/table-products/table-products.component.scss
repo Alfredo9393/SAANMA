@@ -10,7 +10,16 @@
 
   .item1{
     background: rgb(238, 206, 146);
-    align-items: center;
+    // display: flex;
+    // gap: 20px;
+    // padding:1em;
+    // justify-content: center;
+
+    // align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px)   ,1fr ) ) ;
+    
   }
   .item2{
     background: rgb(233, 245, 169);
@@ -31,11 +40,15 @@
 
 
   .example-form-field {
-    width: 200px;
-    height:50px ;
-    background: rgb(209, 146, 146);
+    // max-width: 300px;
+    // min-width: 50px;
+    width: 100%;
+    // height:50px ;
+    background: rgb(120, 196, 231);
+
+
   }
 
   .icon-display {
-    transform: scale(2);
+    transform: scale(1.5);
  }

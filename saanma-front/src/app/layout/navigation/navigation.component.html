@@ -1,22 +1,13 @@
 <div class="fixed_header"> 
 
-
-    <!-- <app-button2></app-button2> -->
-
-
-    <!-- <app-button3></app-button3> -->
-  
- <!-- <app-search-list></app-search-list> -->
-
-
- <!-- <div style=" background: red; width: 90%;">
-    <h1>alfredo del angel perx</h1>
- </div>
- <div style="width: 10%; background: rgb(161, 122, 122);">
-    <h1>alfredo del angel perx</h1>
- </div> -->
-
- <app-search></app-search>
+    <section *ngIf="uri === '/module/component/listProduct'">
+        <app-header-home></app-header-home>
+    </section>
+    <section *ngIf="uri ==='/module/component/tableProducts'">
+        <app-header1></app-header1>
+    </section>
+    <section *ngIf="uri ==='/module/component/listProductDetails/'">
+        <app-header-home></app-header-home>
+    </section>
 </div>
-      
       

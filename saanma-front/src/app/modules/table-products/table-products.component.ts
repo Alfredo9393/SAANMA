@@ -7,6 +7,7 @@ import {MatTableDataSource} from '@angular/material/table';
 
 import {EmployedService} from '../services/employees-list.service'
 import { IProducts } from '../interface/products.metadata';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -26,7 +27,11 @@ export class TableProductsComponent implements AfterViewInit {
 
   dataSource = new MatTableDataSource<IProducts>;
 
-  constructor(private employedService:EmployedService) {
+  constructor(private employedService:EmployedService,private router: Router) {
+    // console.log("pagina2");
+    // this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+    // console.log(this.router.url);
+    // console.log("pagina2");
   }
 
   ngAfterViewInit() {

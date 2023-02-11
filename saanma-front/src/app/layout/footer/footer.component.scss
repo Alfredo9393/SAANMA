@@ -15,11 +15,22 @@
     border-width: 1px;
     border-style: solid;
     border-color: #BDC3C7;
+
 } 
+
+.items{
+    padding: 7px;
+}
+
+.icon-shopp{
+    color:#ea802a;
+    cursor: pointer;
+    transform: scale(1.4);
+}
 
 .icon-form{
     color:#ea802a;
-    font-size: 25px;
     cursor: pointer;
+    transform: scale(1.5);
 }
   

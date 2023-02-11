@@ -1,0 +1,16 @@
+<div class="containerComponent">
+    <app-icon-back></app-icon-back>
+    <!-- <app-search></app-search> -->
+    <div style="background: rgb(236, 176, 176);">
+        <mat-form-field class="example-form-field">
+            <mat-label>Buscar</mat-label>
+            <input matInput type="text" [(ngModel)]="value" #input style="background: rgb(144, 226, 151);">
+            <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon class="icon-display">close</mat-icon>
+            </button>
+          </mat-form-field>
+    </div>
+    <div>
+        <button type="button" class="btn btn-primary">Agregar producto</button>
+    </div>
+</div>

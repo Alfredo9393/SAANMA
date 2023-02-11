@@ -1,0 +1,6 @@
+.containerComponent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* align horizontal y distribuye los mismos espacios entre divs*/
+    align-items: center; /* align vertical */
+}

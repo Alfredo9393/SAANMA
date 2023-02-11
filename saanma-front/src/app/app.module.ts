@@ -10,6 +10,8 @@ import { ViewImagenComponent } from './shared/view-imagen/view-imagen.component'
 import { ListProductComponent } from './modules/list-product/list-product.component';
 import { ProductDetailsComponent } from './modules/product-details/product-details.component';
 import { TableProductsComponent } from './modules/table-products/table-products.component';
+import { ProductCategoryComponent } from './modules/product-category/product-category.component';
+
 //modulos
 
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
@@ -22,6 +24,10 @@ import { Button2Component } from './shared/button2/button2.component';
 import { Button3Component } from './shared/button3/button3.component';
 import { SearchComponent } from './shared/search/search.component';
 import { SearchListComponent } from './shared/search-list/search-list.component';
+import { IconCarComponent } from './shared/icons/icon-car/icon-car.component';
+import { IconBackComponent } from './shared/icons/icon-back/icon-back.component';
+
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Se agrega este para que funcione angular Material
@@ -39,8 +45,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {MatButtonModule} from '@angular/material/button';
-
-
+import { HeaderHomeComponent } from './shared/header/header-home/header-home.component';
+import { Header1Component } from './shared/header/header1/header1.component';
 
 
 @NgModule({
@@ -53,6 +59,7 @@ import {MatButtonModule} from '@angular/material/button';
     ListProductComponent,
     ProductDetailsComponent,
     TableProductsComponent,
+    ProductCategoryComponent,
     
     //share
     CarouselIndicatorsComponent,
@@ -65,7 +72,11 @@ import {MatButtonModule} from '@angular/material/button';
     Button2Component,
     Button3Component,
     SearchComponent,
-    SearchListComponent
+    SearchListComponent,
+    IconCarComponent,
+    IconBackComponent,
+    HeaderHomeComponent,
+    Header1Component
 
   ],
   imports: [
