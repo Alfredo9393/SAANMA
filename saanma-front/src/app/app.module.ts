@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselIndicatorsComponent } from './shared/carousel-indicators/carousel-indicators.component';
 import { ViewImagenComponent } from './shared/view-imagen/view-imagen.component';
-
+//alfredo del anel
 //modulos
 import { ListProductComponent } from './modules/list-product/list-product.component';
 import { ProductDetailsComponent } from './modules/product-details/product-details.component';

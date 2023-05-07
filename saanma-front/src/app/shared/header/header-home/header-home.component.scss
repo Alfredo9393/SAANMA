@@ -1,6 +1,25 @@
 .containerComponent{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; /* align horizontal y distribuye los mismos espacios entre divs*/
     align-items: center; /* align vertical */
+    background: #F2F3F4;
+}
+
+.item1{
+    // background: #489ad1;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.item2{
+    // background: #eb646f;
+    flex-grow: 3;
+}
+.item3{
+    // background: #cb69e4;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
 }

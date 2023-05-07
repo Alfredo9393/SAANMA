@@ -1,49 +1,48 @@
 
 
 .search {
-  width: 90%;
-  max-width: 800px;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: rgb(162, 208, 235);
-  svg { //Posicion del icono busqueda y vaciar caja te texto
-    padding: 9px;
-    position: absolute;
-    cursor: pointer;
-  }
+    width: 90%;
+    position: relative;
+    display: flex;
+    margin: 5px 5px 5px 5px;
+    margin-left: 5%; //nota: se puso 5% para dejar un poco centrado. por que quedo pendiente hacer el centrado de este div con css, 
+    align-items: center;
+    // background: #33FF5E;
 
-  &__icon { //icono de busqueda
-    fill: #ea802a;
-    z-index: 99;
-  }
-
- 
-  &__delete { //icono de vaciar caja de texto
-    fill: #F39C12;
-    right: .1rem; //distancia hacia el otro icono
-    display: none;
-    height: 40px;
-  }
-
-  input {
-    // width: 22rem; //34rem; //tamaño de la caja de texto 22rem
-    width: 100%;
-    height: 8px;
-    box-shadow: 0 0 3px 1px #e1e5ee;
-    border: none;
-    border-radius: 0.2rem;
-    padding: 1.5rem 2.1rem 1.5rem 2rem; //padding: <> <pading del texto al icono borrar> <> <pading del texto al icono buscar> 
-    margin: 5px;
-    font-family: inherit;
-    font-size: 16pt; //2rem;
-    outline: none;
-    &:not(:placeholder-shown) ~ .search__delete {
-      display: block;
+    svg { //Posicion del icono busqueda y vaciar caja te texto
+      // padding: 1px;
+      width: 1em;
+      position: absolute;
+      cursor: pointer;
     }
-    
+    &__icon { //icono de busqueda
+      fill: #ea802a;
+      left: 7px;
+    }
+
+    &__delete { //icono de vaciar caja de texto
+      fill: #F39C12;
+      right: 10px;
+      float:right;
+      display: none;
+    }
+
+    input {
+      width: 100%;
+      padding-right: 22px;
+      padding-left: 25px;
+
+      box-shadow: 0 0 3px 1px #e1e5ee;
+      border: none;
+      border-radius: 0.2rem;
+      font-family: inherit;
+      font-size: 13pt; //2rem;
+      // outline: none;
+
+      &:not(:placeholder-shown) ~ .search__delete {
+        display: block;
+      }
+    }
   }
-
-}
-
+  
+  

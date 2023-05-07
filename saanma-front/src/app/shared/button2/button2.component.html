@@ -1,13 +1,17 @@
 
-	<!-- original icon  -->
-	<div style="background: rgb(0, 255, 0);">
-		<!-- <form> -->
-			<input type="text" name="focus" required class="search-box" placeholder="&#61442; button 2"  type="search"/>
-			<button class="close-icon" type="reset"></button>
-		<!-- </form> -->
-	 
-	</div>
 
+
+<!-- <div class="container-search"> -->
+
+	    <!-- <mat-form-field style="background-color: beige; width: 100%;"> -->
+            <!-- <mat-label>Buscar</mat-label> -->
+            <div style="background-color: brown;width: 100%;">
+              <input matInput type="text" [(ngModel)]="value" #input style="background: rgb(144, 226, 151); width: 100%; ">
+              <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''" style="background-color: aquamarine;">
+                <mat-icon class="icon-display">close</mat-icon>
+              </button>
+            </div>
   
-  
-  
+
+          <!-- </mat-form-field> -->
+<!-- </div> -->

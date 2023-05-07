@@ -3,3 +3,40 @@ https://codepen.io/eval08/pen/zwOXWZ
 
 hay 2 hedar que se activan diferentes
 https://getbootstrap.com/
+
+
+ejemplo de filtrpos 
+https://datatables.net/
+
+ejemplos de agrupaciones
+https://stackblitz.com/edit/angular-datatable-responsive-8dnmjq?file=src%2Fapp%2Fshared%2Fshared.module.ts,src%2Fapp%2Fapp.module.ts,src%2Fapp%2Fviews%2Fexample%2Fexample.component.ts,src%2Fapp%2Fviews%2Fshared-table%2Fshared-table.component.ts
+
+ejemplo de filtros individuales
+https://freakyjolly.com/demo/Angular/angular-material-table-custom-filters-for-multiple-specific-column/
+
+explicaciones de css grid
+https://css-tricks.com/snippets/css/complete-guide-grid/
+
+checar esta documentacion 
+https://www.kuworking.com/css-minmax
+
+curso completo de 
+https://www.youtube.com/watch?v=cN6O13okUww&list=PLvq-jIkSeTUbQc3dGsssp8lxAi5npMrys&index=7
+
+otro ehjemplo de agrupaciones
+https://codepen.io/gilli/pen/QVaWGR/
+
+checar este uso de munimo 
+https://stackoverflow.com/questions/52915683/shrink-grid-items-just-like-flex-items-in-css
+
+
+ejemplos de felxbox
+https://codepen.io/osublake/pen/dMLQJr
+
+podascst 
+entiende tu mente 
+chart toppers podscast
+
+
+
+
