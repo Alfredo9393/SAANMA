@@ -10,6 +10,7 @@ import { IProducts } from '../interface/products.metadata';
 import {Router} from '@angular/router';
 
 
+
 @Component({
   selector: 'app-table-products',
   templateUrl: './table-products.component.html',

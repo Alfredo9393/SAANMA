@@ -38,5 +38,10 @@ entiende tu mente
 chart toppers podscast
 
 
+---checar esta tabla responsivo 
+https://stackblitz.com/edit/mat-table-responsive?file=app%2Ftable-basic-example.html
 
+
+NOTAS:
+- checar el siclo de vida de angular para mejorar el performance
 

@@ -1,4 +1,15 @@
 
+.example-container {
+  height: 750px;;
+  overflow: auto;
+}
+.mat-paginator-sticky {
+  bottom: 0px;
+  position: sticky;
+  z-index: 10;
+}
+
+
 
   .container-table{
     display: flex;
@@ -54,3 +65,38 @@
   .icon-display {
     transform: scale(1.5);
  }
+
+ // stilos columna id
+.mat-column-id {
+  width: 32px;
+  // border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+
+ // stilos columna content
+ .mat-column-content {
+  width: 50px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+
+ // stilos columna price
+ .mat-column-price {
+  width: 32px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+
+ // stilos columna lastUpdate
+ .mat-column-lastUpdate {
+  width: 15% !important;
+
+  width: 32px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+

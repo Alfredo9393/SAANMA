@@ -19,6 +19,8 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "ag-grid-angular": "^29.3.4",
+    "ag-grid-community": "^29.3.4",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^5.2.2",
     "font-awesome": "^4.7.0",

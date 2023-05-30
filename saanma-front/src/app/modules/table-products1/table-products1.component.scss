@@ -1,0 +1,14 @@
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
+
+
+
+.container-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding:1em;
+    margin-bottom: 45px; //se deja ester margen para el menu del bottom
+    background: rgb(70, 206, 111);
+  }

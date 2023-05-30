@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import {HttpClient,HttpHeaders} from '@angular/common/http'
 import { environment } from '../../../environments/environment';
 import { IProducts } from '../interface/products.metadata';
+import { IOlympicData } from '../interface/IOlympicData.metadata';
 
 @Injectable({
   providedIn: 'root'
@@ -36,5 +37,8 @@ export class EmployedService  {
       return this.http.post(url, data, this.httpOptions);
     } 
   
-
+    public olympicWinners(): Observable<IOlympicData[]>  {
+      const url = `https://www.ag-grid.com/example-assets/olympic-winners.json`;
+      return this.http.get<IOlympicData[]>(url)
+    } 
 }

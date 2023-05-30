@@ -10,6 +10,10 @@ import { ViewImagenComponent } from './shared/view-imagen/view-imagen.component'
 import { ListProductComponent } from './modules/list-product/list-product.component';
 import { ProductDetailsComponent } from './modules/product-details/product-details.component';
 import { TableProductsComponent } from './modules/table-products/table-products.component';
+import { TableProducts1Component } from './modules/table-products1/table-products1.component';
+import { TableProducts2Component } from './modules/table-products2/table-products2.component';
+
+
 import { ProductCategoryComponent } from './modules/product-category/product-category.component';
 
 //modulos
@@ -48,6 +52,10 @@ import {MatButtonModule} from '@angular/material/button';
 import { HeaderHomeComponent } from './shared/header/header-home/header-home.component';
 import { Header1Component } from './shared/header/header1/header1.component';
 
+// ag grid component
+import { NumberFloatingFilterComponent } from './shared/ag-grid-component/NumberFloatingFilter.component';
+
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -59,6 +67,9 @@ import { Header1Component } from './shared/header/header1/header1.component';
     ListProductComponent,
     ProductDetailsComponent,
     TableProductsComponent,
+    TableProducts1Component,
+    TableProducts2Component,
+
     ProductCategoryComponent,
     
     //share
@@ -76,19 +87,24 @@ import { Header1Component } from './shared/header/header1/header1.component';
     IconCarComponent,
     IconBackComponent,
     HeaderHomeComponent,
-    Header1Component
+    Header1Component,
+    NumberFloatingFilterComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
+    //implementacion de ag grid
+    AgGridModule, 
+
 
     //para que funcione el numero de filas que debe tener una pagian
-    ,BrowserAnimationsModule
+    BrowserAnimationsModule,
 
     //material angular
-    ,MatTableModule,
+    MatTableModule,
     MatPaginatorModule,
     MatInputModule,
     MatButtonModule,

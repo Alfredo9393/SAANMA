@@ -33,6 +33,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     Nota2: para ocupar <mat-icon></mat-icon> se debe importar en el index.html:
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+4-Se agrego Ag grid 
+ npm install --save ag-grid-community
+ npm install --save ag-grid-angular
+
 ## Notas - ADAP
 Este proyecto es el mas reciente y actualizado - 21-enero-2023
 
