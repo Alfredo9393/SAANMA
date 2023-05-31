@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output, EventEmitter } from '@angular/core';
+import {DataHeardService} from '../../../service/data-heard.service'
 
 @Component({
   selector: 'app-header1',
@@ -6,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header1.component.scss']
 })
 export class Header1Component implements OnInit {
-  value = '';
 
-  constructor() { }
+  constructor( private dataHeardService: DataHeardService ) { }
+
+  onFilterTextBoxChanged() {
+    var value = (document.getElementById('filter-text-box') as HTMLInputElement).value;
+    this.dataHeardService.dataFilter=value;
+    this.dataHeardService.emiteEvent.emit(value)
+  }
+
 
   ngOnInit(): void {
   }

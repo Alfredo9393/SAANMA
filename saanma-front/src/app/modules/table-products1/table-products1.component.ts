@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 import {Router} from '@angular/router';
 import {EmployedService} from '../services/employees-list.service'
 import { IProducts } from '../interface/products.metadata';
+import {DataHeardService} from '../../service/data-heard.service'
 
 import {
   ColDef,
@@ -43,14 +44,15 @@ export class TableProducts1Component implements OnInit {
 
  
 
-  constructor(private employedService:EmployedService) {
+  constructor(private employedService:EmployedService, public dataHeardService: DataHeardService) {
   }
 
   ngOnInit() {
-    // this.getProducts();
+    this.dataHeardService.emiteEvent.subscribe(data => {
+      console.log("recibiendo data" + data)
+      this.onFilterTextBoxChanged(data);
+    })
   }
-
-  // floatingFilterComponentParams: {suppressFilterButton: true}
 
   public columnDefs: ColDef[] = [
     { 
@@ -121,8 +123,6 @@ export class TableProducts1Component implements OnInit {
   ];
 
 
-
-
   onFirstDataRendered(params: FirstDataRenderedEvent) {
     params.api.sizeColumnsToFit();
   }
@@ -178,11 +178,9 @@ export class TableProducts1Component implements OnInit {
     })
   }
 
-
-  onFilterTextBoxChanged() {
-    this.gridApi.setQuickFilter(
-      (document.getElementById('filter-text-box') as HTMLInputElement).value
-    );
+  //filtro global de la tabla
+  onFilterTextBoxChanged(data:string) {
+    this.gridApi.setQuickFilter(data);
   }
 
 

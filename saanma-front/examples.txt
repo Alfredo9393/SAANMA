@@ -1,0 +1,4 @@
+
+
+ejemplo de EventEmitter angular
+https://www.shecodes.io/athena/39545-how-to-change-the-host-properties-in-parent-component-s-css-from-button-click-in-child-component-in-angular
