@@ -4,6 +4,14 @@
 .containerParent{
   display: grid;
   padding: 10px;
+  // justify-content: center;
+  // align-content: center;
+}
+
+.item1{
+  text-align:right; 
+  background: rgb(208, 238, 124);
+  padding: 10px;
 }
 
 .contentGrid{

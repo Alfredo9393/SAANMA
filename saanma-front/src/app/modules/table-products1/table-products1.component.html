@@ -1,7 +1,11 @@
 
 <div class="containerParent">
 
-  <div >
+  <!-- <div class="item1">
+    <h1>SAANMA</h1>
+  </div> -->
+
+  <div class="item2">
 
     <div class="contentGrid" id="grid-wrapper" >
       <ag-grid-angular
@@ -15,12 +19,17 @@
         (gridReady)="onGridReady($event)"
         [cacheQuickFilter]="true"
         [pagination]="true"
+        (selectionChanged)="onSelectionChanged($event)"
+
       ></ag-grid-angular>
     </div>
   
   </div>
 
 </div>
+
+
+<!-- [rowSelection]="rowSelection" -->
 
 <!-- nota: este calcular height: calc(100vh - 100px) 
 Este se suma los pixeles del header y footer y se resta -->

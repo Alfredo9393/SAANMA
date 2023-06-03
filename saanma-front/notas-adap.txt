@@ -33,9 +33,6 @@ https://stackoverflow.com/questions/52915683/shrink-grid-items-just-like-flex-it
 ejemplos de felxbox
 https://codepen.io/osublake/pen/dMLQJr
 
-podascst 
-entiende tu mente 
-chart toppers podscast
 
 
 ---checar esta tabla responsivo 
@@ -45,3 +42,6 @@ https://stackblitz.com/edit/mat-table-responsive?file=app%2Ftable-basic-example.
 NOTAS:
 - checar el siclo de vida de angular para mejorar el performance
 
+podascst 
+entiende tu mente 
+chart toppers podscast

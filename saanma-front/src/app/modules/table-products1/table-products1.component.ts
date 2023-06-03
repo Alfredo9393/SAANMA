@@ -27,9 +27,16 @@ import { IOlympicData } from '../interface/IOlympicData.metadata';
   styleUrls: ['./table-products1.component.scss']
 })
 export class TableProducts1Component implements OnInit {
-  rowData: IOlympicData[] = [];
+  rowData: IProducts[] = [];
   gridApi: any;
   gridColumnApi: any;
+
+  
+  onSelectionChanged(data:any) {
+    const selectedRows = this.gridApi.getSelectedRows();
+    var a = selectedRows.length === 1 ? selectedRows[0].id : '';
+    console.log("seleccionado: "+a);
+  }
 
   public defaultColDef: ColDef = {
     // editable: true,
@@ -54,9 +61,13 @@ export class TableProducts1Component implements OnInit {
     })
   }
 
+ 
   public columnDefs: ColDef[] = [
     { 
-      field: 'athlete', minWidth: 150,  
+      field: 'supplier', 
+      // minWidth: 150,  
+      headerCheckboxSelection: true,
+      checkboxSelection: true,
       suppressMenu: true, // dasabilita el menu filtro en el header de la columna
       floatingFilterComponentParams: {
         suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
@@ -67,25 +78,25 @@ export class TableProducts1Component implements OnInit {
       }
 
     },
-    { field: 'age', minWidth: 70,maxWidth: 90,
+    { field: 'product', minWidth: 50,maxWidth: 170,
       suppressMenu: true, // dasabilita el menu filtro en el header de la columna
       floatingFilterComponentParams: {
         suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
       },
     },
-    { field: 'country', minWidth: 130,
+    { field: 'content', minWidth: 130,
       suppressMenu: true, // dasabilita el menu filtro en el header de la columna
       floatingFilterComponentParams: {
         suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
       },  
     },
-    { field: 'year', minWidth: 70, maxWidth: 90, 
+    { field: 'price', minWidth: 70, maxWidth: 90, 
       suppressMenu: true, // dasabilita el menu filtro en el header de la columna
       floatingFilterComponentParams: {
         suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
       },  
     },
-    { field: 'date', minWidth: 120,
+    { field: 'lastUpdate', minWidth: 120,
       suppressMenu: true, // dasabilita el menu filtro en el header de la columna
       filter: 'agDateColumnFilter', //filtro fecha
       filterParams: dateFilterParams, //filtro fecha
@@ -93,33 +104,9 @@ export class TableProducts1Component implements OnInit {
         suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
       },
     },
-    { field: 'sport', minWidth: 120,
-      suppressMenu: true, // dasabilita el menu filtro en el header de la columna
-      floatingFilterComponentParams: {
-        suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
-      },    
-    },
-    { field: 'gold', minWidth: 80 ,
-      suppressMenu: true, // dasabilita el menu filtro en el header de la columna
-      floatingFilterComponentParams: {
-        suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
-      },    
-    },
-    { field: 'silver', minWidth: 80,
-      suppressMenu: true, // dasabilita el menu filtro en el header de la columna
-      floatingFilterComponentParams: {
-        suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
-      },    
-    },
-    { field: 'bronze', minWidth: 80,
-      suppressMenu: true, // dasabilita el menu filtro en el header de la columna
-      floatingFilterComponentParams: {
-        suppressFilterButton: true, // dasabilita el icono filtro del lado derecho de la caja texto de filtro
-      },  
-    },
-    { field: 'total', minWidth: 80,
-      filter: false // desabilita caja de texto de filtro 
-    },
+    // { field: 'total', minWidth: 80,
+    //   filter: false // desabilita caja de texto de filtro 
+    // },
   ];
 
 
@@ -161,22 +148,15 @@ export class TableProducts1Component implements OnInit {
     this.gridApi = params.api; // se agrego esto por que se ocupa para filtro global
     this.getProducts();
   }
-
   getProducts(){
-
-    this.employedService.olympicWinners().subscribe(data=>{
+    this.employedService.products().subscribe(data=>{
       console.log("Response: " );
       console.log(data);
       this.rowData = data;
       console.log(this.rowData);
-      // console.log(this.dataProducts);
-
-      //  this.dataSource = new MatTableDataSource(this.dataProducts);
-      //  this.dataSource.paginator = this.paginator;
-      //  this.dataSource.sort = this.sort;
-
     })
   }
+
 
   //filtro global de la tabla
   onFilterTextBoxChanged(data:string) {

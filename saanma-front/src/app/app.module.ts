@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselIndicatorsComponent } from './shared/carousel-indicators/carousel-indicators.component';
 import { ViewImagenComponent } from './shared/view-imagen/view-imagen.component';
+
+
+import { AgGridModule } from 'ag-grid-angular';
+
 //alfredo del anel
 //modulos
 import { ListProductComponent } from './modules/list-product/list-product.component';
@@ -17,7 +21,6 @@ import { TableProducts2Component } from './modules/table-products2/table-product
 import { ProductCategoryComponent } from './modules/product-category/product-category.component';
 
 //modulos
-
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
 import { ButtonAddComponent } from './shared/button-add/button-add.component';
 import { Button1Component } from './shared/button1/button1.component';
@@ -31,7 +34,6 @@ import { SearchListComponent } from './shared/search-list/search-list.component'
 import { IconCarComponent } from './shared/icons/icon-car/icon-car.component';
 import { IconBackComponent } from './shared/icons/icon-back/icon-back.component';
 
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Se agrega este para que funcione angular Material
@@ -42,7 +44,6 @@ import { MatInputModule } from '@angular/material/input';
 //se importa para poder ocupar el cliente http
 import { HttpClientModule } from '@angular/common/http';
 
-
 import { MatFormFieldModule } from '@angular/material/form-field';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -51,11 +52,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {MatButtonModule} from '@angular/material/button';
 import { HeaderHomeComponent } from './shared/header/header-home/header-home.component';
 import { Header1Component } from './shared/header/header1/header1.component';
+import { NameStoreComponent } from './shared/logo/name-store/name-store.component';
 
 // ag grid component
 import { NumberFloatingFilterComponent } from './shared/ag-grid-component/NumberFloatingFilter.component';
-
-import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [
@@ -88,7 +88,9 @@ import { AgGridModule } from 'ag-grid-angular';
     IconBackComponent,
     HeaderHomeComponent,
     Header1Component,
-    NumberFloatingFilterComponent
+    NumberFloatingFilterComponent,
+    NameStoreComponent
+
 
   ],
   imports: [
