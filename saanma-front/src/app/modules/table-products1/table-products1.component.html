@@ -1,12 +1,13 @@
 
 <div class="containerParent">
 
-  <!-- <div class="item1">
-    <h1>SAANMA</h1>
-  </div> -->
+  <div class="item1">
+    <button type="button" class="btn btn-primary btn-sm" >Agregar</button>
+    <button type="button" class="btn btn-warning btn-sm" disabled>Editar</button>
+    <button type="button" class="btn btn-danger btn-sm" disabled>Eliminar</button> 
+  </div>
 
   <div class="item2">
-
     <div class="contentGrid" id="grid-wrapper" >
       <ag-grid-angular
       style="width: 100%; height: calc(100vh - 100px)" 
@@ -18,7 +19,6 @@
         (gridSizeChanged)="onGridSizeChanged($event)"
         (gridReady)="onGridReady($event)"
         [cacheQuickFilter]="true"
-        [pagination]="true"
         (selectionChanged)="onSelectionChanged($event)"
 
       ></ag-grid-angular>
@@ -30,6 +30,7 @@
 
 
 <!-- [rowSelection]="rowSelection" -->
+<!-- [pagination]="true" -->
 
 <!-- nota: este calcular height: calc(100vh - 100px) 
 Este se suma los pixeles del header y footer y se resta -->

@@ -45,3 +45,7 @@ NOTAS:
 podascst 
 entiende tu mente 
 chart toppers podscast
+
+
+**este es para ver como acomodar las columnas** grid-column
+https://www.youtube.com/watch?v=-kgGATnsPbs

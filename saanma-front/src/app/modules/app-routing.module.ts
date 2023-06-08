@@ -34,7 +34,7 @@ const routes: Routes = [
     component:TableProductsComponent
   },
   {
-    path:"ProductCategory",
+    path:"productCategory",
     component:ProductCategoryComponent
   }
 

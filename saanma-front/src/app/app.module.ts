@@ -3,8 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CarouselIndicatorsComponent } from './shared/carousel-indicators/carousel-indicators.component';
-import { ViewImagenComponent } from './shared/view-imagen/view-imagen.component';
 
 
 import { AgGridModule } from 'ag-grid-angular';
@@ -22,17 +20,9 @@ import { ProductCategoryComponent } from './modules/product-category/product-cat
 
 //modulos
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
-import { ButtonAddComponent } from './shared/button-add/button-add.component';
-import { Button1Component } from './shared/button1/button1.component';
-import { CardListProductComponent } from './shared/card-list-product/card-list-product.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavigationComponent } from './layout/navigation/navigation.component';
-import { Button2Component } from './shared/button2/button2.component';
-import { Button3Component } from './shared/button3/button3.component';
-import { SearchComponent } from './shared/search/search.component';
-import { SearchListComponent } from './shared/search-list/search-list.component';
-import { IconCarComponent } from './shared/icons/icon-car/icon-car.component';
-import { IconBackComponent } from './shared/icons/icon-back/icon-back.component';
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -50,12 +40,28 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {MatButtonModule} from '@angular/material/button';
+
+
+//share
+import { CarouselIndicatorsComponent } from './shared/carousel-indicators/carousel-indicators.component';
+import { ViewImagenComponent } from './shared/view-imagen/view-imagen.component';
+import { ButtonAddComponent } from './shared/button-add/button-add.component';
+import { Button1Component } from './shared/button1/button1.component';
+import { CardListProductComponent } from './shared/card-list-product/card-list-product.component';
+import { NumberFloatingFilterComponent } from './shared/ag-grid-component/NumberFloatingFilter.component';
+import { HeaderCategoryComponent } from './shared/header/header-category/header-category.component';
+import { Input3Component } from './shared/input-filter/input3/input3.component';
+import { Input1Component } from './shared/input-filter/input1/input1.component';
+import { Input2Component } from './shared/input-filter/input2/input2.component';
 import { HeaderHomeComponent } from './shared/header/header-home/header-home.component';
 import { Header1Component } from './shared/header/header1/header1.component';
 import { NameStoreComponent } from './shared/logo/name-store/name-store.component';
-
-// ag grid component
-import { NumberFloatingFilterComponent } from './shared/ag-grid-component/NumberFloatingFilter.component';
+import { Button2Component } from './shared/button2/button2.component';
+import { Button3Component } from './shared/button3/button3.component';
+import { SearchComponent } from './shared/search/search.component';
+import { SearchListComponent } from './shared/search-list/search-list.component';
+import { IconCarComponent } from './shared/icons/icon-car/icon-car.component';
+import { IconBackComponent } from './shared/icons/icon-back/icon-back.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +95,11 @@ import { NumberFloatingFilterComponent } from './shared/ag-grid-component/Number
     HeaderHomeComponent,
     Header1Component,
     NumberFloatingFilterComponent,
-    NameStoreComponent
+    NameStoreComponent,
+    HeaderCategoryComponent,
+    Input3Component,
+    Input1Component,
+    Input2Component
 
 
   ],
