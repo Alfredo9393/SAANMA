@@ -1,0 +1,38 @@
+.contaninerCard {
+    // // margin-top: 60px;
+    // // margin-bottom: 45px;
+    // display: grid;
+    // // grid-gap: 8px; 
+    // gap: 5rem;
+    // grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px)   ,1fr ) ) ;
+    // // padding: 1rem;
+
+    background-color: rgb(223, 170, 170);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px)   ,1fr ) ) ;
+    padding: 15px; //pone un margin alrededor
+    grid-gap: 25px; //pone sepacion entre los div hijos exepto el pading
+
+    // gap: 1rem;
+    // grid-template-columns: repeat(4,1fr);
+    // justify-content: stretch;
+    // column-gap: 50px;
+
+}
+
+
+  .grid-container > div {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 18px;
+  }
+
+
+.card{
+    background-color: rgb(172, 247, 150);
+    border-radius: 10px;
+    height: 150px;
+    // margin: auto; //con esta propiedad lo pone centrado
+    // text-align: center; //Pone centrado
+}

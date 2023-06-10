@@ -47,7 +47,7 @@ import { CarouselIndicatorsComponent } from './shared/carousel-indicators/carous
 import { ViewImagenComponent } from './shared/view-imagen/view-imagen.component';
 import { ButtonAddComponent } from './shared/button-add/button-add.component';
 import { Button1Component } from './shared/button1/button1.component';
-import { CardListProductComponent } from './shared/card-list-product/card-list-product.component';
+import { CardListProductComponent } from './shared/card-list/card-list-product/card-list-product.component';
 import { NumberFloatingFilterComponent } from './shared/ag-grid-component/NumberFloatingFilter.component';
 import { HeaderCategoryComponent } from './shared/header/header-category/header-category.component';
 import { Input3Component } from './shared/input-filter/input3/input3.component';
@@ -62,6 +62,7 @@ import { SearchComponent } from './shared/search/search.component';
 import { SearchListComponent } from './shared/search-list/search-list.component';
 import { IconCarComponent } from './shared/icons/icon-car/icon-car.component';
 import { IconBackComponent } from './shared/icons/icon-back/icon-back.component';
+import { GroupProductComponent } from './shared/card-list/group-product/group-product.component';
 
 @NgModule({
   declarations: [
@@ -99,7 +100,8 @@ import { IconBackComponent } from './shared/icons/icon-back/icon-back.component'
     HeaderCategoryComponent,
     Input3Component,
     Input1Component,
-    Input2Component
+    Input2Component,
+    GroupProductComponent
 
 
   ],

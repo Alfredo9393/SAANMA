@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-import {IProductPreview} from '../../interfase/IProductPreview.metadata'
+import {IProductPreview} from '../../../interfase/IProductPreview.metadata'
 
 
 @Component({
