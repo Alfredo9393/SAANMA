@@ -18,6 +18,7 @@ import {
 // import 'ag-grid-community/styles/ag-grid.css';
 // import 'ag-grid-community/styles/ag-theme-alpine.css';
 import { IOlympicData } from '../interface/IOlympicData.metadata';
+import { IpropertiesBtn } from '../interface/IpropertiesBtn.metadata';
 
 
 
@@ -31,11 +32,21 @@ export class TableProducts1Component implements OnInit {
   gridApi: any;
   gridColumnApi: any;
 
-  
+  activaBtn: IpropertiesBtn ={activeNew:true,activeCopy:false,disabled:true};
+
+  constructor(private employedService:EmployedService, public dataHeardService: DataHeardService) {
+  }
+
   onSelectionChanged(data:any) {
     const selectedRows = this.gridApi.getSelectedRows();
-    var a = selectedRows.length === 1 ? selectedRows[0].id : '';
-    console.log("seleccionado: "+a);
+    // var a = selectedRows.length === 1 ? selectedRows[0].id : '';
+    console.log("todo:" +selectedRows.length)
+    if(selectedRows.length === 1){
+      this.activaBtn ={activeNew:false,activeCopy:true,disabled:false};
+    }else{
+      this.activaBtn ={activeNew:true,activeCopy:false,disabled:true};
+    }
+    
   }
 
   public defaultColDef: ColDef = {
@@ -51,8 +62,7 @@ export class TableProducts1Component implements OnInit {
 
  
 
-  constructor(private employedService:EmployedService, public dataHeardService: DataHeardService) {
-  }
+  
 
   ngOnInit() {
     this.dataHeardService.emiteEvent.subscribe(data => {
