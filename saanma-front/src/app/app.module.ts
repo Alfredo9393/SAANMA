@@ -63,6 +63,7 @@ import { SearchListComponent } from './shared/search-list/search-list.component'
 import { IconCarComponent } from './shared/icons/icon-car/icon-car.component';
 import { IconBackComponent } from './shared/icons/icon-back/icon-back.component';
 import { GroupProductComponent } from './shared/card-list/group-product/group-product.component';
+import { PendingTaskComponent } from './modules/pending-task/pending-task.component';
 
 @NgModule({
   declarations: [
@@ -76,8 +77,8 @@ import { GroupProductComponent } from './shared/card-list/group-product/group-pr
     TableProductsComponent,
     TableProducts1Component,
     TableProducts2Component,
-
     ProductCategoryComponent,
+    PendingTaskComponent,
     
     //share
     CarouselIndicatorsComponent,

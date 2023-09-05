@@ -1,0 +1,25 @@
+
+
+.containerParent{
+  display: grid;
+  gap: 1rem;
+  // grid-auto-rows: 22rem; //el height que va tener cada div 
+  // grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px),1fr)); //auto para que se ajuste solo el espacio tamaño de divs
+
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); //auto para que se ajuste solo el espacio tamaño de divs
+  // grid-auto-rows: dense;
+
+  grid-gap:10px; //Pone un margin top y button 
+  padding: 10px; //Pone un margin los card
+  // justify-content: center;
+  // align-content: center;
+  background: rgb(238, 124, 168);
+
+}
+
+
+.item1{
+
+  background: rgb(208, 238, 124);
+  margin: 0;
+}

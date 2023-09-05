@@ -1,0 +1,12 @@
+
+
+* tab pending task *
+OPCION 1
+- Lista todos los productos que se acaba de actualzar 
+- va ser dos div iquierda y deracha  
+- div izquierdo: va estar la lista de los pendietes
+- div derecho: va ser donde se va mostrar lo que ya se revisaron 
+- 
+OPCION 2
+- Una lista donde tenga un boton de hecho con nombre dinamico: "hacer","en proceso","hecho" 
+- se va cambiado de color las tarjetas, rojo, amarillo y verde desabilitado con la hora con que se hizo y quien hizo la tarea

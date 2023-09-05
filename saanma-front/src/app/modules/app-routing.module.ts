@@ -5,8 +5,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { TableProductsComponent } from './table-products/table-products.component';
 import { TableProducts1Component } from './table-products1/table-products1.component';
 import { TableProducts2Component } from './table-products2/table-products2.component';
-
 import { ProductCategoryComponent } from './product-category/product-category.component';
+import { PendingTaskComponent } from './pending-task/pending-task.component';
 
 const routes: Routes = [
   {
@@ -27,7 +27,7 @@ const routes: Routes = [
   },
   {
     path:"tableProducts2",  //pendiente revisar que nombre dejar
-    component:TableProducts2Component
+    component:TableProducts1Component
   },
   {
     path:"tableProducts-table-angular",  //pendiente revisar que nombre dejar - table angular
@@ -36,7 +36,12 @@ const routes: Routes = [
   {
     path:"productCategory",
     component:ProductCategoryComponent
+  },
+  {
+    path:"pendingTask",
+    component:PendingTaskComponent
   }
+
 
   
 
