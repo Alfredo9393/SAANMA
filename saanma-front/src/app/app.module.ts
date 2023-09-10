@@ -64,6 +64,7 @@ import { IconCarComponent } from './shared/icons/icon-car/icon-car.component';
 import { IconBackComponent } from './shared/icons/icon-back/icon-back.component';
 import { GroupProductComponent } from './shared/card-list/group-product/group-product.component';
 import { PendingTaskComponent } from './modules/pending-task/pending-task.component';
+import { TitleCenterComponent } from './shared/titles/title-center/title-center.component';
 
 @NgModule({
   declarations: [
@@ -102,8 +103,8 @@ import { PendingTaskComponent } from './modules/pending-task/pending-task.compon
     Input3Component,
     Input1Component,
     Input2Component,
-    GroupProductComponent
-
+    GroupProductComponent,
+    TitleCenterComponent
 
   ],
   imports: [

@@ -5,6 +5,8 @@ import {HttpClient,HttpHeaders} from '@angular/common/http'
 import { environment } from '../../../environments/environment';
 import { IProducts } from '../interface/products.metadata';
 import { IOlympicData } from '../interface/IOlympicData.metadata';
+import { IPendingTask } from '../interface/IPendingTask.metadata';
+
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +27,15 @@ export class EmployedService  {
     //   console.log("endpoint : " +url )
     //   return this.http.get(url);
     // }
+
+
+    public getPendingTaks(): Observable <IPendingTask[]> {
+      // const url = `https://adapmocks.free.beeceptor.com/getTask`;
+      const url = `../../../assets/data/pendingTask.json`;
+      return this.http.get<IPendingTask[]>(url);
+      // return this.http.get<IPendingTask[]>(url);
+
+    }
 
     public products(): Observable <IProducts[]> {
       const url = `${environment.url}/products`;

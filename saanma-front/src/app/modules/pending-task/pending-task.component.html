@@ -1,39 +1,77 @@
+
 <div class="containerParent">
 
-  <div *ngFor="let rw of rowData" class="item1">
+  <div class="item1">
+    <app-title-center [title] = '"Pendientes"'></app-title-center>
+
+    <div class="cardTast">
+      
+      <div *ngFor="let rw of rowData" class="adap">
+        <p class="item1_leve1" >{{rw.title}} adap </p> 
+      </div>
     
-    <div class="chldItem1">
-      <p class="item1_leve1" >{{rw.title}} adap </p>   
     </div>
-    <div class="chldItem2">
-
-    </div>
-
+  
   </div>
 
-    <!-- <div class="item1">
-        <div *ngFor="let rw of rowData" class="item1_leve1">
-          <p class="item1_leve1" >{{rw.title}} </p>   
-          <p class="item1_leve1" >${{rw.price}} </p>   
-          <p class="" >{{rw.comments}} </p>   
+  <div class="item2">
+    <app-title-center [title] = '"Hechos"'></app-title-center>
+
+    
+    <div class="cardTast">
+      
+      <div *ngFor="let rw of rowData" class="adap">
+        <p class="item1_leve1" >{{rw.title}} adap </p> 
+      </div>
+    
+    </div>
+    
+  </div>
+
+</div>
+
+<!-- <header class="title">
+  <h1>LISTA DE TAREAS</h1>
+</header>
+
+<div class="container">
+  <header class="header">
+    <h1>log</h1>
+  </header>
+  <main class="content">
+    <article class="">
+
+    </article>
+  </main>
+</div>
+
+
+
+<div class="containerParent">
+
+  <div class="content1">
+
+    <div class="item1">
+
+      <div class="item1">
+        <div class="item1-children">
+          <h1>adap</h1>
         </div>
-    </div> -->
-  
-    <!-- <div class="item2">
-      <div *ngFor="let rw of rowData" class="item1_leve1">
-        <p >{{rw.title}} </p> 
-        <p >${{rw.price}} </p>   
-        <p >{{rw.comments}} </p>   
+      </div>
+    
+    </div>
+
+    <div class="item2">
+      <div>
+        <h1>adap</h1>
       </div>
     </div>
-   
-    <div class="item3">
-      <div *ngFor="let rw of rowData" class="item1_leve1">
-        <p >{{rw.title}} </p> 
-        <p >${{rw.price}} </p>   
-        <p >{{rw.comments}} </p>   
-      </div>
-    </div> -->
-  
+
   </div>
-  
+
+  <div class="content2">
+    <h1>adap2</h1>
+  </div>
+
+</div>
+   -->

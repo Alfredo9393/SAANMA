@@ -1,25 +1,121 @@
-
-
 .containerParent{
-  display: grid;
-  gap: 1rem;
-  // grid-auto-rows: 22rem; //el height que va tener cada div 
-  // grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px),1fr)); //auto para que se ajuste solo el espacio tamaño de divs
-
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); //auto para que se ajuste solo el espacio tamaño de divs
-  // grid-auto-rows: dense;
-
-  grid-gap:10px; //Pone un margin top y button 
-  padding: 10px; //Pone un margin los card
-  // justify-content: center;
-  // align-content: center;
-  background: rgb(238, 124, 168);
-
-}
-
+    display: grid;
+    // background: rgb(178, 248, 213);
+    gap: 1rem;
+    // align-content: center;
+    // justify-content: center;
+  }
 
 .item1{
-
-  background: rgb(208, 238, 124);
-  margin: 0;
+  background: #EAEDED;
 }
+
+.item2{
+  // background: rgb(170, 140, 199);
+  background: #EAEDED;
+
+}
+
+
+.cardTast{
+  display: grid;
+  gap: 1rem;
+  padding: 10px; //Pone un margin los card
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-rows: minmax();
+  // background: rgb(48, 216, 146);
+  align-items:start ; //pone la posicion de los card //start,center,left,strech
+}
+
+.adap{
+  background-color: white;
+  //  align-self: center;
+}
+
+
+
+
+
+
+// .content1{
+//   // display: grid;
+//   background: rgb(236, 209, 158);
+//   // grid-gap:10px; //Pone un margin top y button 
+//   // padding: 10px; //Pone un margin los card
+//   // margin: 0;
+// }
+
+
+// .item1{
+//   display: flex;
+//   background: rgb(217, 192, 241);
+//   justify-content: center;
+//   text-align: center;
+//   // width: auto;
+// }
+
+// .content2{
+//   // display: grid;
+//   background: rgb(243, 220, 105);
+//   // grid-gap:10px; //Pone un margin top y button 
+//   // padding: 10px; //Pone un margin los card
+//   // margin: 0;
+// }
+
+
+// .containerParent{
+//   display: grid;
+//   gap: 1rem;
+//   // grid-auto-rows: 22rem; //el height que va tener cada div 
+//   // grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px),1fr)); //auto para que se ajuste solo el espacio tamaño de divs
+
+//   grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); //auto para que se ajuste solo el espacio tamaño de divs
+//   // grid-auto-rows: dense;
+
+//   grid-gap:10px; //Pone un margin top y button 
+//   padding: 10px; //Pone un margin los card
+//   // justify-content: center;
+//   // align-content: center;
+//   background: rgb(238, 124, 168);
+
+// }
+
+
+// .item1{
+//   display: grid;
+//   background: rgb(208, 238, 124);
+//   grid-gap:10px; //Pone un margin top y button 
+//   padding: 10px; //Pone un margin los card
+//   // margin: 0;
+// }
+
+// .chldItem{
+//   // background: rgb(176, 243, 232);
+//   margin: 0;
+
+//   // opacity: 0.5;
+//   background: #CCC;
+// }
+
+// .p-title{
+//   margin: 3px;
+//   font-size: 16px; 
+//   font-weight:600;
+//   display: inline-block;
+// }
+
+// .p-value{
+//   margin: 0;
+//   display: inline-block;
+// }
+
+
+
+// .itemAction{
+//   display: grid;
+//   background: rgb(196, 197, 194);
+//   grid-template-columns: repeat(4,auto); //auto para que se ajuste solo el espacio tamaño de divs
+//   justify-content: center;
+//   padding: 7px;
+//   margin: auto;
+// }

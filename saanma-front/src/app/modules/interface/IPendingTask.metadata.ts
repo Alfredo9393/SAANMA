@@ -3,4 +3,6 @@ export interface IPendingTask {
     title?: string;
     price: number;
     comments?:string  
+    lastUpdate?:string  
+    updateUser?:string  
 }
